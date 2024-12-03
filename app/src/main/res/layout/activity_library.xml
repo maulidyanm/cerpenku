@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Library"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Karya"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <SearchView
+            android:id="@+id/svdaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:iconifiedByDefault="false"
+            android:searchHintIcon="@null"
+            android:queryHint="Search.."
+            android:background="@drawable/border"
+            android:closeIcon="@drawable/clear"
+            app:tint="@color/icon"/>
+
+        <ProgressBar
+            android:id="@+id/progresslibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/primary"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            tools:listitem="@layout/card_library"/>
+
+        <TextView
+            android:id="@+id/noDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tidak ada data karya"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primary_text"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</ScrollView>

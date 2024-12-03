@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBook"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="20dp"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perbarui Karyamu Di sini!"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/etpenulis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Penulis"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:editable="false"/>
+
+                <EditText
+                    android:id="@+id/etjudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul Karya"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"/>
+
+                <EditText
+                    android:id="@+id/etisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Isi Karya"
+                    android:justificationMode="inter_word"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"/>
+
+                <TextView
+                    android:id="@+id/tvtanggalpublik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/kategoriedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label"
+                        android:textSize="13sp"
+                        android:textColor="@color/primary_text"
+                        android:background="@drawable/border"
+                        android:inputType="none"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btperbarui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perbarui Karya"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+  </ScrollView>

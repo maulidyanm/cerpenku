@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266537545487",
+    "project_id": "maulidyaquill",
+    "storage_bucket": "maulidyaquill.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266537545487:android:bb9ae251348950c8df187a",
+        "android_client_info": {
+          "package_name": "com.maulidya.quill"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvqXXyhW1uypVktbhN4jpQ9JtnugEdMNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/akun_main"
+        android:layout_weight="0"
+        app:tint="@color/icon"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tvIsiKomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isi Komentar"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/poppins"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvWaktuKomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu Komentar"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/poppins"
+            android:textSize="8sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
