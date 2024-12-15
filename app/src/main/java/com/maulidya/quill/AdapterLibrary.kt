@@ -10,6 +10,7 @@ import android.widget.PopupMenu
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
 class AdapterLibrary(private val context: Context, private val karyaList: MutableList<ModelKarya>) :
@@ -20,6 +21,7 @@ class AdapterLibrary(private val context: Context, private val karyaList: Mutabl
         var tvKategori: TextView = itemView.findViewById(R.id.lkategori)
         var tvTanggal: TextView = itemView.findViewById(R.id.ltanggal)
         var menu: ImageView = itemView.findViewById(R.id.menu)
+        var card: CardView = itemView.findViewById(R.id.cvLibrary)
 
         init {
             menu.setOnClickListener {
@@ -87,5 +89,17 @@ class AdapterLibrary(private val context: Context, private val karyaList: Mutabl
         holder.tvJudul.text = karya.judul
         holder.tvKategori.text = karya.kategori
         holder.tvTanggal.text = karya.tanggal
+
+        holder.card.setOnClickListener {
+            val intent = Intent(context, EditBook::class.java).apply {
+                putExtra("idKarya", karya.idKarya)
+                putExtra("judul", karya.judul)
+                putExtra("kategori", karya.kategori)
+                putExtra("tanggal", karya.tanggal)
+                putExtra("penulis", karya.penulis)
+                putExtra("isi", karya.isi)
+            }
+            context.startActivity(intent)
+        }
     }
 }
