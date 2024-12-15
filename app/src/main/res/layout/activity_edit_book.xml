@@ -72,7 +72,7 @@
                 <EditText
                     android:id="@+id/etisi"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="wrap_content"
                     android:hint="Isi Karya"
                     android:justificationMode="inter_word"
                     android:background="@drawable/border"
@@ -82,7 +82,9 @@
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/poppins"
                     android:inputType="textMultiLine"
-                    android:scrollbars="vertical"/>
+                    android:scrollbars="vertical"
+                    android:gravity="top"
+                    android:maxLines="8"/>
 
                 <TextView
                     android:id="@+id/tvtanggalpublik"
